@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 0 !important;
+  /* margin: 0; */
+  /* background: #EEEEEE; */
+}
+
+#wrap {
+  /* background: lightsalmon; */
+  overflow: hidden;
+}
+
+
+
+
+@keyframes rotate_anime {
+  0% {
+      transform:rotate(0deg);/* アニメーションの進みが0%の時の状態 */
+  }
+  100% {
+      transform:rotate(360deg);/* アニメーションの進みが100%の時の状態 */
+  }
+}
+.rotate_test:nth-child(1) {
+  animation:rotate_anime 1s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(2) {
+  animation:rotate_anime 1.1s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(3) {
+  animation:rotate_anime 1.2s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(4) {
+  animation:rotate_anime 1.3s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(5) {
+  animation:rotate_anime 1.4s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(6) {
+  animation:rotate_anime 1.5s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(7) {
+  animation:rotate_anime 1.6s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(8) {
+  animation:rotate_anime 1.6s;/* rotate_animeを1秒かけて実行する */
+}
+.rotate_test:nth-child(9) {
+  animation:rotate_anime 1.6s;/* rotate_animeを1秒かけて実行する */
+  animation:name 2s initial;
+}
+
+li {
+  list-style: none;
+  /* background: teal; */
+}
+
+@keyframes name {
+  0% { color: white; }
+  /* 50% { background: orange; } */
+  100% { color: hotpink; }
+}
+
+
+
+.head {
+  text-align: center;
+  justify-content: center;
+}
+
+.head_inner {
+  background: #AA0000	;
+  padding: 50px 0;
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.head_inner2 span {
+  /* color: #AA0000;
+  background-color: #FFD700;
+  width: 160px; */
+  margin: 0 auto;
+}
+
+.head_inner2 {
+  font-size: x-large;
+  /* background: violet; */
+  margin: 100px auto;
+  padding: 20px auto;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+.head_inner3 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  font-size: x-large;
+  margin-bottom: 100px;
+}
+
+.head_inner3 span {
+  color: #AA0000;
+  background-color: #FFD700;
+  /* width: 160px; */
+  margin: 0 auto;
+}
+
+
+.main .row {
+  justify-content: center;
+}
+
+
+.balloon {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 40px 20px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #eee;
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #eee;
+}
+
+.frist {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.point {
+  background: #FFD700;
+  color: #AA0000;
+  border-bottom: solid 1px;
+}
+
+.row p {
+  margin: 60px auto;
+  /* text-align: center; */
+}
+
+.list {
+  color: #AA0000;
+}
+
+.list span {
+  background: #FFD700;
+}
+
+.list p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list_even p:nth-of-type(2n) {
+  margin-bottom:60px;
+  margin-top: 0;
+  /* background: violet; */
+}
+.list_even p:nth-of-type(2n+1) {
+  margin-bottom:0px;
+  /* background: darkblue; */
+}
